@@ -4,10 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "global": "^4.3.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "serve": "^10.1.1"
+    "react-dom": "^16.6.3"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
