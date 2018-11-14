@@ -1,0 +1,40 @@
+#index
+  background-color: rgb(0, 200, 215)
+  color: #fff
+  border: solid 5px green
+
+
+.other
+  transform: scale(1.1)
+  position: absolute
+  right: 0
+  width: 10%
+  animation: mymove 5s infinite
+
+
+@keyframes mymove
+  0%
+    top: 0px
+    right: 0px
+    background: red
+    transform: rotate(0deg)
+  25%
+    top: 0px
+    right: 100px
+    background: blue
+    transform: rotate(180deg)
+  50%
+    top: 100px
+    right: 100px
+    background: yellow
+    transform: rotate(30deg)
+  75%
+    top: 100px
+    right: 0px
+    background: green
+    transform: rotate(195deg)
+  100%
+    top: 0px
+    right: 0px
+    background: red
+    transform: rotate(0deg)
