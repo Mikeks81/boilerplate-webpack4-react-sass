@@ -35,13 +35,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 1048576,
-              outputPath: 'images/'
+              limit: 10000,
+              name: 'static/media/[name].[hash:8].[ext]'
             }
           }
         ]
@@ -52,7 +52,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: 'fonts/'
+              outputPath: 'static/fonts/[name].[hash:8].[ext]'
             }
           }
         ]
